@@ -25,43 +25,43 @@ const StyledCell = styled.div`
     width: 100%;
     height: 100%;
   }
-  &[class^="neon-"]{
+  &[class^="cell-"]{
     background-color: #fefe22;
   }
-  &.neon-0{
+  &.cell-0{
     background-color: transparent;
   }
-  &.neon-2{
+  &.cell-2{
     background-color: #f3da0b;
   }
-  &.neon-4{
+  &.cell-4{
     background-color: #00a550;
   }
-  &.neon-8{
+  &.cell-8{
     background-color: #7fff00;
   }
-  &.neon-16{
+  &.cell-16{
     background-color: #296600;
   }
-  &.neon-32{
+  &.cell-32{
     background-color: #808000;
   }
-  &.neon-64{
+  &.cell-64{
     background-color: #9f8200;
   }
-  &.neon-128{
+  &.cell-128{
     background-color: #b8860b;
   }
-  &.neon-256{
+  &.cell-256{
     background-color: #d10077;
   }
-  &.neon-512{
+  &.cell-512{
     background-color: #523600;
   }
-  &.neon-1024{
+  &.cell-1024{
     background-color: #5b3a29;
   }
-  &.neon-2048{
+  &.cell-2048{
     background-color: #642424;
   }
 `;
@@ -75,7 +75,7 @@ const Num = styled.span`
 `;
 
 const Cell = ({ val }) => (
-  <StyledCell className={`neon-${val}`}>
+  <StyledCell className={`cell-${val}`}>
     <div>{val ? <Num>{val}</Num> : ''}</div>
   </StyledCell>
 );
